@@ -38,7 +38,7 @@ const StyledCheckBox = styled.div`
   }
 `;
 
-function ListComponent({ text onDelete }) {
+function ListComponent({ text, onDelete }) {
   return (
     <StyleLandItem>
       <StyledCheckBox >

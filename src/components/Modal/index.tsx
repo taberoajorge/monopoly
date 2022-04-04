@@ -15,8 +15,11 @@ const StyledModal = styled.div`
     color: var(--text-color);
 `;
 
+type Props = {
+  children: React.ReactNode;
+}
 
-function Modal({ children }) {
+function Modal({ children }: Props) {
   return ReactDOM.createPortal(
       <StyledModal>
         {children}

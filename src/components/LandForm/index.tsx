@@ -33,9 +33,15 @@ const StyledButton = styled.button`
   background-color: var(--secondary-color);
 `;
 
+type Props = {
+  onOpenModal: () => void;
+  createLand: (land: any) => void;
+  value: any;
+}
+
 const labels = ['title', 'price', 'rarity'];
 
-function LandForm({ onOpenModal, createLand, value }) {
+function LandForm({ onOpenModal, createLand, value }: Props) {
 
   const [values, handleOnChange] = useForm({
     id: Math.random() * 100 + 1 + '' + Math.random() * 100,
@@ -45,7 +51,7 @@ function LandForm({ onOpenModal, createLand, value }) {
   });
 
 
-  const onCreateLand = (event) => {
+  const onCreateLand = (event: React.ChangeEvent<HTMLInputElement> ) => {
     event.preventDefault()
     createLand(values)
   };

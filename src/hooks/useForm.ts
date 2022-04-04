@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+
 function useForm(initialState = {}) {
   const [values, setValues] = useState(initialState)
 
@@ -7,8 +8,7 @@ function useForm(initialState = {}) {
     setValues(initialState)
   }
 
-  const handleOnChange = ({ target }) => {
-    // console.log(e);
+  const handleOnChange = ({ target }:  any) => {
     setValues({
       ...values,
       [target.name]: target.value,

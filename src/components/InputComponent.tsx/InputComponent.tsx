@@ -1,7 +1,14 @@
 import { TextField } from '@mui/material'
 import React from 'react'
 
-const InputComponent = ({value, name, handleOnChange}) => {
+type Props = {
+  value: any
+  name: string
+  handleOnChange: () => void
+}
+
+
+const InputComponent = ({value, name, handleOnChange}: Props) => {
 
   
 
