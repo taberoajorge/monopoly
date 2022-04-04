@@ -75,7 +75,7 @@ If you have the package manager installed, you can install pnpm using the follow
 | Name                         | Description                                                                                                                          |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `pnpm install`           | install all dependencies                                                                            |
-| `pnpm start ` | run the project in localhost:3000                                                       |
+| `pnpm run dev ` | run the project in localhost:3000                                                       |
 | `pnpm build`    |    prepare your project to production                                                                              |
 
 
